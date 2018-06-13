@@ -1,0 +1,1000 @@
+ 1133  cd www/
+ 1134  ls
+ 1135  mkdir Result_analysis
+ 1136  cp -R kietresult Result_analysis/*
+ 1137  cp -R kietresult Result_analysis/
+ 1138  cd Result_analysis/
+ 1139  ls
+ 1140  cd kietresult/
+ 1141  la
+ 1142  ls
+ 1143  cd..
+ 1144  cd ....
+ 1145  cd ..
+ 1146  rm -rf kietresult/
+ 1147  cd ..
+ 1148  cp -R result Result_analysis/
+ 1149  cd Result_analysis/
+ 1150  ls
+ 1151  cd result/
+ 1152  ls
+ 1153  cd ..
+ 1154  echo "# result_analysis" >> README.md
+ 1155  git init
+ 1156  git add README.md
+ 1157  git commit -m "first commit"
+ 1158  git remote add origin https://github.com/Abhas-Bhatnagar/result_analysis.git
+ 1159  git push -u origin master
+ 1160  git add result/
+ 1161  git commit -m "second commit"
+ 1162  git push -u origin master
+ 1163  cd ..
+ 1164  ls
+ 1165  cp -R kiet Result_analysis/
+ 1166  cd Result_analysis/
+ 1167  cd kiet/
+ 1168  ls
+ 1169  cd btech/
+ 1170  ls
+ 1171  cd ..
+ 1172  git commit -m "third commit"
+ 1173  git add kiet/
+ 1174  git commit -m "third commit"
+ 1175  git push -u origin master
+ 1176  cd ..
+ 1177  exit
+ 1178  cd /home/
+ 1179  ls
+ 1180  cd vmail/
+ 1181  ls
+ 1182  cd cse.college.edu/
+ 1183  ls
+ 1184  cd hod/
+ 1185  ls
+ 1186  cd new/
+ 1187  ls
+ 1188  cd ..
+ 1189  cd cur/
+ 1190  ls
+ 1191  cd ../tmp/
+ 1192  ls
+ 1193  cd /etc/postfix/
+ 1194  ls
+ 1195  cat ma
+ 1196  cat main.cf
+ 1197  ls
+ 1198  nano input.txt
+ 1199  telnet localhost 25 
+ 1200  ls /home/vmail/cse.college.edu/hod/new/
+ 1201  ls /home/vmail/cse.college.edu/hod/cur/
+ 1202  ls /home/vmail/cse.college.edu/hod/tmp/
+ 1203  tailf /var/log/mail.log
+ 1204  cat /etc/dovecot/conf.d/10-mail.conf 
+ 1205  ls /home/vmail/cse.college.edu/hod/new/
+ 1206  ls /home/vmail/cse.college.edu/hod/tmp/
+ 1207  tailf /var/log/mail.log
+ 1208  cd /var/log/
+ 1209  ls
+ 1210  tailf  mail.err
+ 1211  tailf  mail.err.1 
+ 1212  tailf  mail.log
+ 1213  postconf -n
+ 1214  cd /etc/postfix/
+ 1215  telnet localhost 25 < input.txt 
+ 1216  telnet localhost 25
+ 1217  nano main.cf
+ 1218  cat mysql-virtual-mailbox-maps.cf
+ 1219  ls
+ 1220  cat mysql-virtual-alias-maps.cf 
+ 1221  cat mysql-virtual-mailbox-domains.cf 
+ 1222  nano main.cf
+ 1223  cat mysql-virtual-mailbox-maps.cf
+ 1224  nano mysql-virtual-mailbox-maps.cf
+ 1225  service postfix reload 
+ 1226  service postfix restart 
+ 1227  cd ..
+ 1228  cp -R postfix postfix_tmp
+ 1229  cp -R dovecot dovecot_tmp
+ 1230  cd /etc/postfix
+ 1231  ls
+ 1232  nano main.cf
+ 1233  postmap -q college.edu mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf 
+ 1234  nano main.cf
+ 1235  service postfix reload 
+ 1236  service postfix restart
+ 1237  postmap -q college.edu mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf 
+ 1238  cat main.cf
+ 1239  postmap -q college.edu mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf
+ 1240  postmap -q email1@college.edu mysql:/etc/postfix/mysql-virtual-mailbox-
+ 1241  postmap -q hod@cse.college.edu mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf 
+ 1242  nano main.cf
+ 1243  cat vmaps
+ 1244  nano main.cf
+ 1245  service postfix  reload 
+ 1246  service postfix  restart 
+ 1247  postmap -q college.edu mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf
+ 1248  postmap -q email1@college.edu mysql:/etc/postfix/mysql-virtual-mailbox-
+ 1249  postmap -q hod@cse.college.edu mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf 
+ 1250  postmap -q cse.college.edu mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf
+ 1251  cat input.txt 
+ 1252  nano input.txt 
+ 1253  tailf /var/log/mail.log
+ 1254  cd /home/vmail/
+ 1255  ls
+ 1256  cd cse.college.edu/
+ 1257  ls
+ 1258  cd hod/
+ 1259  ls
+ 1260  ls new/
+ 1261  ls cur/
+ 1262  ls tmp/
+ 1263  telnet localhost 25
+ 1264  cd /var/www/result
+ 1265  nano index.php 
+ 1266  cp index.php ff.html
+ 1267  exit
+ 1268  ps -aux
+ 1269  ps -auroot
+ 1270  ps -audovecot
+ 1271  ps -aupostfix
+ 1272  ps -aumysql
+ 1273  tty
+ 1274  ps -auroot | head -n 2
+ 1275  ps -auroot | head -n 6
+ 1276  ps -auroot | head -n 8
+ 1277  ls
+ 1278  cd /home/
+ 1279  ls
+ 1280  cd face/
+ 1281  ls
+ 1282  ln detect.py link1
+ 1283  ls -l
+ 1284  ln detect.py d
+ 1285  ls -l
+ 1286  cat d
+ 1287  ls -l
+ 1288  cat link1 
+ 1289  exit
+ 1290  reboot
+ 1291  cd /home/
+ 1292  ls
+ 1293  cd face/
+ 1294  ls
+ 1295  mkdir facepp
+ 1296  cd facepp/
+ 1297  nano detect
+ 1298  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1299  clear
+ 1300  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age" > detect.json
+ 1301  nano detect.json 
+ 1302  cat detect.json 
+ 1303  nano detect.json 
+ 1304  vim detect.json 
+ 1305  cd /home/face/facepp/
+ 1306  nano detect.json 
+ 1307  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=http://vibgyor7.xyz/crypto/sample_faces/abhas2.png" > comapre.json
+ 1308  ls
+ 1309  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAAdHAAAAJGFiYjIxODg5LTQxYTgtNDU3ZS04OTRmLTVkNDUwOGM3ZmUzZg.jpg" > comapre_with_linkd.json
+ 1310  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAAdHAAAAJGFiYjIxODg5LTQxYTgtNDU3ZS04OTRmLTVkNDUwOGM3ZmUzZg.jpg" > comapre_with_linkd.json 
+ 1311  cat comapre_with_linkd.json 
+ 1312  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=http://vibgyor7.xyz/crypto/sample_faces/abhas2.png" > comapre_with_linkd.json 
+ 1313  cat comapre_with_linkd.json 
+ 1314  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=http://vibgyor7.xyz/crypto/sample_faces/abhas3.png" > comapre_with_linkd.json 
+ 1315  cat comapre_with_linkd.json 
+ 1316  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=http://vibgyor7.xyz/crypto/sample_faces/abhas3.png" > comapre_with_linkd.json 
+ 1317  cat comapre_with_linkd.json 
+ 1318  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=http://vibgyor7.xyz/crypto/sample_faces/abhas4.png" > comapre_with_linkd.json 
+ 1319  cat comapre_with_linkd.json 
+ 1320  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/compare" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "face_token1=b8246194005c79dd3e468fde119a3900" -F "image_url2=http://vibgyor7.xyz/crypto/sample_faces/abhas5.png" > comapre_with_linkd.json 
+ 1321  cat comapre_with_linkd.json 
+ 1322  cd /home/face/facepp/
+ 1323  ls
+ 1324  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/faceset/create" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "display_name=abhasfaceset"
+ 1325  {"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}{"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}{"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}{"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}{"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}{"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}{"faceset_token": "13aa596ec0c52034650def596655bd7e", "time_used": 79, "face_cou                                          nt": 0, "face_added": 0, "request_id": "1521795381,773447de-d4b4-4074-a92e-6cd6d                                          0e70aef", "outer_id": "", "failure_detail": []}
+ 1326  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/faceset/create" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "display_name=abhasfaceset"
+ 1327  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/faceset/create" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "display_name=abhasfaceset" > faceset.json
+ 1328  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age" > detect.json 
+ 1329  cd /home/face/facepp/
+ 1330  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age" > detect1.json 
+ 1331  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas2.png" -F "return_landmark=1" -F "return_attributes=gender,age" > detect2.json
+ 1332  cd /home/face/facepp/
+ 1333  ls
+ 1334  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1335  cd /
+ 1336  cd home/
+ 1337  ls
+ 1338  mkdir arihant
+ 1339  mkdir mansi
+ 1340  cd /var/www/
+ 1341  ls
+ 1342  mkdir ar
+ 1343  nano asd.txt
+ 1344  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age" > test.json
+ 1345  cd ar/
+ 1346  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age" > ar.json
+ 1347  ls
+ 1348  cd /home/face/facepp/
+ 1349  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas3.png" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a" > search.json
+ 1350  cd /home/face/facepp/
+ 1351  ls
+ 1352  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/akshay1.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a" > search_akshay.json
+ 1353  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas6.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a" > search_abhas6.json
+ 1354  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas7.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a"
+ 1355  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a"
+ 1356  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj2.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a"
+ 1357  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj3.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a"
+ 1358  120 packages can be updated.
+ 1359  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj3.jpg" -F "faceset_token=e6c917e7774ebca19ef4a241d4cc524a"
+ 1360  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj3.jpg" -F "return_landmark=1" -F "return_attributes=gender,age" > ankit_detect1.json
+ 1361  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "return_landmark=1" -F "return_attributes=gender,age" > ankit_detect2.json
+ 1362  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/faceset/create" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "display_name=ankitrajfaceset" > ankit_create.josn
+ 1363  mv  ankit_create.josn /home/face/facepp/
+ 1364  mv ankit_detect1.json /home/face/facepp/
+ 1365  mv ankit_detect2.json /home/face/facepp/
+ 1366  ls
+ 1367  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/faceset/addface" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc" -F "face_tokens=bd4ae2166102386af5aca3c073bf1f6d,6ea3a81ecd1127df8e0082d60d3d8096" > /home/face/facepp/faceSetAdd_ankitraj.json
+ 1368  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.jpg" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc"
+ 1369  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.jpg" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc"curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc"
+ 1370  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc"
+ 1371  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj2.jpg" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc"
+ 1372  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/search" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "faceset_token=36294ed4d2606dd5b976b2465857c1dc"
+ 1373  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=<api_key>" -F "api_secret=<api_secret>" -F "image_file=@image_file.jpg" -F "return_landmark=1" 
+ 1374  cd..
+ 1375  cd.
+ 1376  cd var
+ 1377  ls
+ 1378  cd root
+ 1379  cd..
+ 1380  ls -a
+ 1381  cd ..
+ 1382  cd www
+ 1383  cd var
+ 1384  cd www
+ 1385  cd ar
+ 1386  ls
+ 1387  cd ..
+ 1388  cd var
+ 1389  cd www
+ 1390  cd ar
+ 1391  ls
+ 1392  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=<bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_>" -F "api_secret=<e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9>" -F "image_file=https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2008/09/133823195_13dd92f2d6_o.jpg?resize=600%2C450&ssl=1" -F "return_landmark=1" -F "return_attributes=gender,age">ar.json
+ 1393  cd ..
+ 1394  cd var
+ 1395  cd www
+ 1396  cd ar
+ 1397  cd ..
+ 1398  cd var/www/ar
+ 1399  ls
+ 1400  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=<bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_>" -F "api_secret=<e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9>" -F "image_file=https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2008/09/133823195_13dd92f2d6_o.jpg?resize=600%2C450&ssl=1" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1401  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=<bQhZApRHjR1qDIHBO1k88TIMpXiiuG8>" -F "api_secret=<e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9>" -F "image_file=https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2008/09/133823195_13dd92f2d6_o.jpg?resize=600%2C450&ssl=1" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1402  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=<e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9>" -F "image_file=https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2008/09/133823195_13dd92f2d6_o.jpg?resize=600%2C450&ssl=1" -F "return_landmark=1" -F "return_attributes=gender,age">ar.json
+ 1403  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2008/09/133823195_13dd92f2d6_o.jpg?resize=600%2C450&ssl=1" -F "return_landmark=1" -F "return_attributes=gender,age">ar.json
+ 1404  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2008/09/133823195_13dd92f2d6_o.jpg?resize=600%2C450&ssl=1" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1405  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1406  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=http://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1407  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1408  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@www.vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1409  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@https://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1410  cd ..
+ 1411  cd var/www/ar
+ 1412  ls
+ 1413  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg"" \
+ 1414  -F "return_landmark=1" \
+ 1415  -F "return_attributes=gender,age">ari.json
+ 1416  cd ..
+ 1417  cd var/www/ar
+ 1418  ls
+ 1419  gedit ari.json
+ 1420  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@https://vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1421  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@www.vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1422  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@vibgyor7.xyz/crypto/sample_faces/abhas1.png" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1423  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@http://www2.mpq.mpg.de/Theorygroup/CIRAC/wiki/images/thumb/e/e4/GroupPicture.jpg/1024px-GroupPicture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1424  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg"" \
+ 1425  -F "return_landmark=1" \
+ 1426  -F "return_attributes=gender,age"
+ 1427  cd ..
+ 1428  cd var/www/ar
+ 1429  ls
+ 1430  open ari.json
+ 1431  cd ..
+ 1432  cd vvar/www/ar
+ 1433  ls
+ 1434  cd var/www/ar
+ 1435  ls
+ 1436  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=@https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg"" \
+ 1437  -F "return_landmark=1" \
+ 1438  -F "return_attributes=gender,age"
+ 1439  cd /home/arihant/
+ 1440  ls
+ 1441  cd /var/www/crypto/
+ 1442  ls
+ 1443  cd sample_faces/
+ 1444  l
+ 1445  exit
+ 1446  cd /var/www/ar/
+ 1447  ls
+ 1448  cat ari.json 
+ 1449  nano ari.json 
+ 1450  mv ari.json ari.sh
+ 1451  chmod 777 ari.sh 
+ 1452  ./ari.sh 
+ 1453  cat ar.json 
+ 1454  exit
+ 1455  cd ..
+ 1456  cd var/www/ar/
+ 1457  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1458  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1459  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">ari.json
+ 1460  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">ar.json
+ 1461  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=NJa0u5HB8gR9UKePW70Uc31eDQWu8dsd" -F "api_secret=P6D5kcfOQ_JachuEsdIACjQ0-dPYi__O" -F "image_url=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">ar.json
+ 1462  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1463  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_file=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg"" \
+ 1464  -F "return_landmark=1" \
+ 1465  -F "return_attributes=gender,age"
+ 1466  cd ..
+ 1467  cd var/www/ar
+ 1468  ls
+ 1469  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=14ff69ebd5c805becbc58de79e273022">ar.json
+ 1470  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=fb2e37c483ddb951325fcead599447d8,14ff69ebd5c805becbc58de79e273022">ar.json
+ 1471  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">ari.json
+ 1472  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=https://preview.ibb.co/h1j1Kn/1024px_Group_Picture.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">detectop.txt
+ 1473  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=f7d3277fdf724abaa10b49ac71caed82,f2d98c26a8b93b1473c43b38baa12250"curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=f7d3277fdf724abaa10b49ac71caed82,f2d98c26a8b93b1473c43b38baa12250">analyzeop.txt
+ 1474  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=f7d3277fdf724abaa10b49ac71caed82">analyzeop.txt
+ 1475  cd ..
+ 1476  cd var/www/ar
+ 1477  ls
+ 1478  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "return_landmark=1" -F "return_attributes=gender,age"
+ 1479  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=14ff69ebd5c805becbc58de79e273022"
+ 1480  cd ..
+ 1481  cd var/www/ar
+ 1482  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">detectop.txt
+ 1483  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj1.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">detectop.txt
+ 1484  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/face/analyze" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "return_landmark=1" -F "face_tokens=87d5208ae35c7ab603fa607ed4604af6">analyzeop.txt
+ 1485  cd ..
+ 1486  cd var/www/ar
+ 1487  ls
+ 1488  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj2.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">detectop.txt
+ 1489  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/detect" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "image_url=http://vibgyor7.xyz/crypto/sample_faces/ankitraj3.jpg" -F "return_landmark=1" -F "return_attributes=gender,age">detectop.txt
+ 1490  curl -X POST "https://api-us.faceplusplus.com/facepp/v3/faceset/create" -F "api_key=bQhZApRHjR1qDIHBO1k88TIMpXiiuG8_" -F "api_secret=e4kE1zXMk1eIB4x2PyOWpB0Ju7mBEQY9" -F "outer_id=ankitfaceset" -F "tag=person,male" -F "face_tokens=87d5208ae35c7ab603fa607ed4604af6,dc719819e4048916b49d2a35c03a7b3f,e97aa00f7c99df77a8412c37ab48172c">facesetcreateapi.txt
+ 1491  cd /var/www
+ 1492  ls
+ 1493  cd html
+ 1494  ls
+ 1495  cd ..
+ 1496  ls
+ 1497  cd feedback
+ 1498  ls
+ 1499  sudo nano init.php
+ 1500  sudo nano data.php
+ 1501  sudo nano index.html
+ 1502  cd /home/abh
+ 1503  whois khoyapaya.gov.in
+ 1504  whois vibgyor7.xyz
+ 1505  cd /home/
+ 1506  nmap khoyapaya.gov.in
+ 1507  cd /var/www/
+ 1508  ls
+ 1509  cd kiet
+ 1510  ls
+ 1511  cd btech/
+ 1512  ls
+ 1513  cd b_third/
+ 1514  ls
+ 1515  cd /cs
+ 1516  cd cse/
+ 1517  ls
+ 1518  ls -al
+ 1519  nano .cse_6sem1.py 
+ 1520  cd /var/www/kiet/btech/b_third/cse
+ 1521  ls -al
+ 1522  nano .cse_6sem1.py 
+ 1523  cd /var/www/crypto/sample_faces/
+ 1524  nano script.py
+ 1525  python script.py 
+ 1526  pip install cognitive_face
+ 1527  pip install --upgrade pip
+ 1528  pip install cognitive_face
+ 1529  python script.py 
+ 1530  cd /var/www/crypto/sample_faces/
+ 1531  nano compare.py
+ 1532  python compare.py 
+ 1533  cd /var/www/crypto/sample_faces/
+ 1534  nano loop.py
+ 1535  python loop.py 
+ 1536  mv abhas3.png abhas31.png
+ 1537  python loop.py 
+ 1538  ls
+ 1539  faces = [CF.face.detect(img_url) for img_url in img_urls]
+ 1540  cd ..
+ 1541  cd var/www
+ 1542  ls
+ 1543  cd ar
+ 1544  python
+ 1545  python new.py
+ 1546  cd /var/www
+ 1547  ls
+ 1548  cd feedback
+ 1549  ls
+ 1550  reboot
+ 1551  cd /var/www/crypto/sample_faces/
+ 1552  nano display.php
+ 1553  nano demo.php
+ 1554  nano class.image.php
+ 1555  ls
+ 1556  nano demo.php 
+ 1557  nano display.php 
+ 1558  nano demo.php 
+ 1559  nano display.php 
+ 1560  nano demo.php 
+ 1561  ls
+ 1562  cp demo.php ./demo.pho
+ 1563  cp display.php ./display.php
+ 1564  ls
+ 1565  rm demo.ph
+ 1566  rm demo.pho 
+ 1567  rm demo.php
+ 1568  nano demo.php
+ 1569  cp demo.php  ../demo.php
+ 1570  ls ..
+ 1571  cp display.php ../display.php
+ 1572  cp class.image.php ../class.image.php
+ 1573  cd ..
+ 1574  nano demo.php
+ 1575  cd /var/www/crypto/
+ 1576  ls
+ 1577  top
+ 1578  cd /var/www/crypto/
+ 1579  nano demo.php 
+ 1580  cp demo1.php 
+ 1581  cp demo.php d.php 
+ 1582  nano d.php 
+ 1583  nano class.image.php 
+ 1584  cd /etc
+ 1585  cd postfix
+ 1586  git init
+ 1587  ls
+ 1588  cd ..
+ 1589  cp postfix postfix1
+ 1590  cp -R postfix postfix1
+ 1591  cd postfix
+ 1592  echo "# postfix">> readme_postfix.md 
+ 1593  git add readme_postfix.md 
+ 1594  git commit -m "first commit"
+ 1595  git remote add origin https://github.com/Abhas-Bhatnagar/webmail.git
+ 1596  git push -u origin master
+ 1597  git add *
+ 1598  git commit -m "first commit"
+ 1599  git remote add origin https://github.com/Abhas-Bhatnagar/webmail.git
+ 1600  git push -u origin master
+ 1601  cd /etc/postfix
+ 1602  git push -u origin master
+ 1603  git push -u origin postfix
+ 1604  reboot
+ 1605  exit
+ 1606  sudo apt-get install curl python-software-properties
+ 1607  sudo dpkg --configure -a
+ 1608  sudo apt-get install curl python-software-properties
+ 1609  sudo dpkg --configure -a
+ 1610  sudo apt-get install curl python-software-properties
+ 1611  curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+ 1612  sudo apt-get install nodejs
+ 1613  sudo dpkg --configure -a
+ 1614  sudo apt-get install nodejs
+ 1615  sudo apt autoremove
+ 1616  sudo dpkg --configure -a
+ 1617  sudo apt autoremove0
+ 1618  sudo apt autoremove
+ 1619  reboot
+ 1620  sudo apt-get install nodejs
+ 1621  sudo dpkg --configure -a
+ 1622  sudo apt-get install nodejs
+ 1623  nano first_node.js
+ 1624  service apache stop
+ 1625  service apache status
+ 1626  service postfix status
+ 1627  qQ
+ 1628  service apache2 status
+ 1629  service apache2 stop
+ 1630  service apache2 sta
+ 1631  service apache2 stop
+ 1632  ls
+ 1633  node first_node.js 
+ 1634  cat first_node.js 
+ 1635  node first_node.js 
+ 1636  node -v
+ 1637  nano file.js
+ 1638  rm -r mansi
+ 1639  rm mansi
+ 1640  cd /home/
+ 1641  rm -r mansi
+ 1642  rm -r arihant/
+ 1643  ls
+ 1644  mkdir abhas
+ 1645  cd abhas/
+ 1646  nano f.js
+ 1647  node f.js 
+ 1648  netstat -tulnp | grep 8080
+ 1649  npm install -g learnyounode
+ 1650  sudo npm install -g learnyounode
+ 1651  learnyounode 
+ 1652  nano program.js
+ 1653  node program.js 
+ 1654  learnyounode verify program.js
+ 1655  nano program.js
+ 1656  learnyounode verify program.js
+ 1657  learnyounode 
+ 1658  nano program.js 
+ 1659  node program.js 
+ 1660  nano program.js 
+ 1661  node program.js 
+ 1662  node program.js 1 2 3
+ 1663  nano program.js 
+ 1664  node program.js 1 2 3
+ 1665  learnyounode run program.js 
+ 1666  learnyounode verify program.js 
+ 1667  nano program.js 
+ 1668  node program.js 1 2 3
+ 1669  nano program.js 
+ 1670  learnyounode verify program.js 
+ 1671  learnyounode 
+ 1672  nano program.js 
+ 1673  node program.js 
+ 1674  nano program.js 
+ 1675  node program.js 
+ 1676  nano program.js 
+ 1677  node program.js 
+ 1678  nano program.js 
+ 1679  node program.js 
+ 1680  nano program.js 
+ 1681  node program.js 
+ 1682  nano program.js 
+ 1683  node program.js 
+ 1684  nano program.js 
+ 1685  node program.js 
+ 1686  nano program.js 
+ 1687  node program.js 
+ 1688  nano program.js 
+ 1689  learnyounode verify program.js 
+ 1690  nano program.js 
+ 1691  learnyounode verify program.js 
+ 1692  nano program.js 
+ 1693  learnyounode verify program.js 
+ 1694  nano program.js 
+ 1695  node program.js 
+ 1696  nano program.js 
+ 1697  node program.js "hello\nhow\nru"
+ 1698  nano program.js 
+ 1699  node program.js "hello\nhow\nru"
+ 1700  learnyounode run program.js 
+ 1701  nano program.js 
+ 1702  learnyounode run program.js 
+ 1703  nano program.js 
+ 1704  learnyounode run program.js 
+ 1705  nano program.js 
+ 1706  learnyounode run program.js 
+ 1707  nano program.js 
+ 1708  learnyounode run program.js 
+ 1709  learnyounode verify program.js 
+ 1710  nano program.js 
+ 1711  learnyounode 
+ 1712  nano program.js 
+ 1713  learnyounode run program.js 
+ 1714  var fs=require('fs')
+ 1715  var buf=fs.readFile(process.argv[2],data)
+ 1716  var string=buf.toString()
+ 1717  var sp=string.split('')
+ 1718  //console.log(sp)
+ 1719  c=0
+ 1720  for(var i=0;i<sp.length;i++)
+ 1721  nano program.js 
+ 1722  nano program.js1 
+ 1723  mv program.js1 program.js
+ 1724  nano program.js
+ 1725  learnyounode run program.js
+ 1726  nano program.js
+ 1727  learnyounode run program.js
+ 1728  nano program.js
+ 1729  learnyounode run program.js
+ 1730  nano program.js
+ 1731  learnyounode run program.js
+ 1732  nano program.js
+ 1733  learnyounode run program.js
+ 1734  nano program.js
+ 1735  learnyounode verify program.js 
+ 1736  nano program.js
+ 1737  learnyounode
+ 1738  cat program.js 
+ 1739  nano program.js 
+ 1740  learnyounode run program.js 
+ 1741  cat program.js 
+ 1742  nano program.js 
+ 1743  learnyounode run program.js 
+ 1744  nano program.js 
+ 1745  learnyounode run program.js 
+ 1746  nano program.js 
+ 1747  learnyounode run program.js 
+ 1748  nano program.js 
+ 1749  learnyounode run program.js 
+ 1750  nano program.js 
+ 1751  learnyounode run program.js 
+ 1752  nano program.js 
+ 1753  learnyounode run program.js 
+ 1754  nano program.js 
+ 1755  learnyounode run program.js 
+ 1756  nano program.js 
+ 1757  learnyounode run program.js 
+ 1758  cat program.js 
+ 1759  learnyounode 
+ 1760  nano program.js 
+ 1761  learnyounode run program.js 
+ 1762  learnyounode verify program.js 
+ 1763  nano program.js 
+ 1764  learnyounode run program.js 
+ 1765  nano program.js 
+ 1766  learnyounode run program.js 
+ 1767  nano program.js 
+ 1768  nano p.js
+ 1769  mv p.js program.js 
+ 1770  nano program.js 
+ 1771  learnyounode run program.js 
+ 1772  lear
+ 1773  learnyounode 
+ 1774  reboot
+ 1775  learnyounode 
+ 1776  nano program.js 
+ 1777  learnyounode run program.js ram
+ 1778  learnyounode run program.js
+ 1779  nano program.js 
+ 1780  learnyounode run program.js
+ 1781  nano program.js 
+ 1782  learnyounode run program.js
+ 1783  nano program.js 
+ 1784  learnyounode run program.js
+ 1785  nano program.js 
+ 1786  learnyounode run program.js
+ 1787  nano program.js 
+ 1788  learnyounode run program.js
+ 1789  nano program.js 
+ 1790  learnyounode run program.js
+ 1791  nano program.js 
+ 1792  learnyounode run program.js
+ 1793  nano program.js 
+ 1794  learnyounode run program.js
+ 1795  learnyounode verify program.js
+ 1796  nano p.js
+ 1797  mv p.js program.js 
+ 1798  nano program.js 
+ 1799  learn run program.js 
+ 1800  learnyounode run program.js 
+ 1801  learnyounode verify program.js 
+ 1802  nano program.js 
+ 1803  learnyounode verify program.js 
+ 1804  nano program.js 
+ 1805  learnyounode verify program.js 
+ 1806  nano program.js 
+ 1807  learnyounode verify program.js 
+ 1808  nano program.js 
+ 1809  learnyounode verify program.js 
+ 1810  nano program.js 
+ 1811  learnyounode verify program.js 
+ 1812  nano program.js 
+ 1813  learnyounode run program.js 
+ 1814  nano program.js 
+ 1815  learnyounode run program.js 
+ 1816  nano program.js 
+ 1817  learnyounode run program.js 
+ 1818  learnyounode verify program.js 
+ 1819  nano program.js 
+ 1820  learnyounode verify program.js 
+ 1821  nano program.js 
+ 1822  learnyounode 
+ 1823  var fs=require('fs')
+ 1824  fs.readdir(process.argv[2], (err, data) => {
+ 1825  //        console.log(m_ss);
+ 1826  });
+ 1827  learnyounode 
+ 1828  cd home
+ 1829  cd /home/
+ 1830  ls
+ 1831  mkdir testing
+ 1832  mkdir public
+ 1833  mkdir controller
+ 1834  mkdirls
+ 1835  ls
+ 1836  rm -r controller/
+ 1837  rm -r public/
+ 1838  ls
+ 1839  cd testing/
+ 1840  mkdir public
+ 1841  mkdir controller
+ 1842  mkdir view
+ 1843  ls
+ 1844  mkdir test_dir
+ 1845  cd test_dir/
+ 1846  nano abc.txt
+ 1847  ls
+ 1848  echo "# testing" >> README.md
+ 1849  git init
+ 1850  ls
+ 1851  git add README.md 
+ 1852  ls
+ 1853  git commit -m "f commit"
+ 1854  git remote add origin https://github.com/Abhas-Bhatnagar/testing.git
+ 1855  ls
+ 1856  git push -u origin master
+ 1857  cat README.md 
+ 1858  git add abc.txt 
+ 1859  git commit -m "f commit"
+ 1860  git remote add origin https://github.com/Abhas-Bhatnagar/testing.git
+ 1861  git push -u origin master
+ 1862  git branch branch1
+ 1863  ls
+ 1864  git checkout branch1 
+ 1865  ls
+ 1866  echo "# tt" >> tt_file
+ 1867  add tt_file 
+ 1868  git add tt_file 
+ 1869  ls
+ 1870  git commit -m "f commit"
+ 1871  git remote add origin https://github.com/Abhas-Bhatnagar/testing.git
+ 1872  git push -u origin master
+ 1873  ls
+ 1874  git status -s
+ 1875  ls
+ 1876  git clone https://github.com/Abhas-Bhatnagar/testing.git
+ 1877  ls
+ 1878  cd testing/
+ 1879  ls
+ 1880  git branch
+ 1881  git branch
+ 1882  git checkout branch
+ 1883  git checkout b11 
+ 1884  ls
+ 1885  add abc.txt 
+ 1886  git add abc.txt 
+ 1887  git status -s
+ 1888  git push -u origin master
+ 1889  git branch
+ 1890  git push -u origin b11 
+ 1891  git branch b2
+ 1892  git checkout b2
+ 1893  nano b2.txt
+ 1894  git checkout b2
+ 1895  git add b2.txt 
+ 1896  git push -u origin b2 
+ 1897  git branch
+ 1898  git branch branch12
+ 1899  git checkout branch12 
+ 1900  cd test_dir/testing/
+ 1901  git init
+ 1902  ls
+ 1903  -a
+ 1904  ls -a
+ 1905  touch hello
+ 1906  git commit -m "msg"
+ 1907  git push
+ 1908  git branch
+ 1909  git ls-tree -r --name-only msg
+ 1910  git ls -tree -r --name-only msg
+ 1911  git log -tree -r --name-only msg
+ 1912  git ls -tree -r --name-only msg
+ 1913  git ls -tree -r --name -only msg
+ 1914  git --help
+ 1915  git log
+ 1916  git status
+ 1917  git add abc.txt 
+ 1918  git status
+ 1919  cd /
+ 1920  ls
+ 1921  cd home/
+ 1922  ls
+ 1923  cd testing/
+ 1924  ls
+ 1925  cd view/
+ 1926  git -v
+ 1927  cd /home/
+ 1928  ls
+ 1929  mkdir day3
+ 1930  cd abhas/
+ 1931  cd ..
+ 1932  ls
+ 1933  cd day3/
+ 1934  git init
+ 1935  ls -a
+ 1936  nano read.txt
+ 1937  cat read.txt 
+ 1938  git status
+ 1939  git add read.txt 
+ 1940  git status
+ 1941  git commit
+ 1942  git status
+ 1943  git remote add test https://github.com/Abhas-Bhatnagar/day3.git
+ 1944  git push test master
+ 1945  git remote -v
+ 1946  git remote add new1 "https://github.com/aman-manocha/test.git"
+ 1947  git remote -v
+ 1948  git remote add new1 "https://github.com/aman-manocha1/test.git"
+ 1949  git remote add new12 "https://github.com/aman-manocha1/test.git"
+ 1950  git remote -v
+ 1951  git pull test master
+ 1952  git pull new1 master
+ 1953  git status
+ 1954  ls -a
+ 1955  cat readme.txt 
+ 1956  git push test master
+ 1957  git stash apply
+ 1958  git stash
+ 1959  git stash apply
+ 1960  git remote add "temp" "https://github.com/aman-manocha/test.git"
+ 1961  git pull temp master
+ 1962  git remote -v
+ 1963  git status
+ 1964  git branch
+ 1965  git pull ravin master
+ 1966  git stash readme.txt
+ 1967  git stash
+ 1968  git pull ravin master
+ 1969  git stash apply
+ 1970  git staths
+ 1971  git status
+ 1972  git remote -v
+ 1973  git push test master 
+ 1974  git status
+ 1975  ls
+ 1976  vim readme.txt 
+ 1977  git push test master 
+ 1978  git status
+ 1979  git add .
+ 1980  git status
+ 1981  git commit -m "mergerd comflict"
+ 1982  git commit
+ 1983  git remote -v
+ 1984  git checkout -b "new_branch"
+ 1985  git remote -v
+ 1986  git push test 
+ 1987  git push test new_branch
+ 1988  touch file.txt
+ 1989  git add file.txt 
+ 1990  git commit -m "file"
+ 1991  git push 
+ 1992  git push test
+ 1993  git push test new_branch
+ 1994  git status
+ 1995  ls
+ 1996  git checkout read.txt
+ 1997  history
+ 1998  ls
+ 1999  cd /home/
+ 2000  ls
+ 2001  cd testing/
+ 2002  ls
+ 2003  cd /var/www/
+ 2004  mkdir survey2connect
+ 2005  cd survey2connect/
+ 2006  git init
+ 2007  ls -a
+ 2008  nano .git
+ 2009  git add *
+ 2010  ls
+ 2011  git add *
+ 2012  nano .git
+ 2013  git add *.*
+ 2014  nano .git
+ 2015  git status
+ 2016  rm .git/
+ 2017  rm .git
+ 2018  cd .git/
+ 2019  ls
+ 2020  cd branches/
+ 2021  ls
+ 2022  cd ../hooks/
+ 2023  ls
+ 2024  cd ..
+ 2025  cat HEAD 
+ 2026  cat in
+ 2027  cat info/
+ 2028  cat index 
+ 2029  PuTTYPuTTYPuTTYPuTTYclear
+ 2030  cd ..
+ 2031  ls
+ 2032  ls -a
+ 2033  rm -r .git/
+ 2034  ls -a
+ 2035  git status
+ 2036  git init
+ 2037  ls -a
+ 2038  git status
+ 2039  git add index.html 
+ 2040  git status
+ 2041  git add *
+ 2042  git status
+ 2043  ls -a
+ 2044  git add *.*
+ 2045  git status
+ 2046  git add controller/
+ 2047  git status
+ 2048  cd controller/
+ 2049  touch c.html
+ 2050  cd..
+ 2051  cd ..
+ 2052  ls
+ 2053  git status
+ 2054  git add *
+ 2055  git status
+ 2056  rm controller/c.html 
+ 2057  git status
+ 2058  git rm controller/
+ 2059  git rm -r controller/
+ 2060  git status
+ 2061  ls
+ 2062  mkdir
+ 2063  mkdir controller
+ 2064  touch controller/f.html
+ 2065  git status
+ 2066  git add *
+ 2067  git status
+ 2068  git commit
+ 2069  git commit > commit.log
+ 2070  kill 
+ 2071  top
+ 2072  git commit 
+ 2073  git status 
+ 2074  git commit 
+ 2075  rm commit.log 
+ 2076  git commit 
+ 2077  git status 
+ 2078  git commit 
+ 2079  git commit -m "first commit"
+ 2080  git commit 
+ 2081  touch controller/b.html
+ 2082  git commit 
+ 2083  git *
+ 2084  git add *
+ 2085  git commit 
+ 2086  ls
+ 2087  cd controller/
+ 2088  ls
+ 2089  rm *
+ 2090  ls
+ 2091  cd ..
+ 2092  git status 
+ 2093  git rm controller/b.html 
+ 2094  git rm controller/*
+ 2095  ls
+ 2096  git status 
+ 2097  ls
+ 2098  mkdir controller
+ 2099  cd controller/
+ 2100  ls
+ 2101  touch a.html
+ 2102  cd ..
+ 2103  git status
+ 2104  git *
+ 2105  git add *
+ 2106  git status
+ 2107  cd controller/
+ 2108  ls
+ 2109  git rm a.html 
+ 2110  git rm -f a.html 
+ 2111  git status
+ 2112  cd ..
+ 2113  git status
+ 2114  git add *
+ 2115  git status
+ 2116  cd con
+ 2117  ls
+ 2118  mkdir controller
+ 2119  touch controller/demo.txt
+ 2120  git status
+ 2121  git reset HEAD controller/f.html
+ 2122  git status
+ 2123  git rm controller/f.html 
+ 2124  git status
+ 2125  git add *
+ 2126  git status
+ 2127  git commit
+ 2128  git commit -m "second"
+ 2129  git remote add origin https://github.com/Abhas-007/13thjune.git
+ 2130  git push -u origin master
+ 2131  history
+ 2132  history > log.txt
